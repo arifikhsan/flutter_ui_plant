@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_plant/constant.dart';
+import 'package:flutter_ui_plant/screens/home/widgets/featured_plants_widget.dart';
 import 'package:flutter_ui_plant/screens/home/widgets/header_with_searchbox_widget.dart';
 import 'package:flutter_ui_plant/screens/home/widgets/recommended_plants_widget.dart';
 import 'package:flutter_ui_plant/screens/home/widgets/title_with_more_button_widget.dart';
@@ -27,6 +29,10 @@ class BodyWidget extends StatelessWidget {
           TitleWithMoreButtonWidget(
             title: 'Featured Plants',
             morePress: () {},
+          ),
+          FeaturedPlantsWidget(),
+          SizedBox(
+            height: kDefaultPadding,
           ),
         ],
       ),
